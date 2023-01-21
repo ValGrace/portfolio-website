@@ -1,0 +1,262 @@
+
+:root {
+  --title-color: orangered; 
+  --primary-background: #c9effafa;
+  --paper-bg: #000000e7;
+  --text-color: #ffffff;
+  --form-text-color: rgb(250, 0, 104);  
+ 
+} 
+
+body {
+  background-color: black;
+  color: var(--text-color);
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Rampart One', cursive;
+  font-family: 'Space Mono', monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .career {
+    animation: 20s anim-careers ease-in-out infinite;
+  }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#p {
+  fill: black;
+  fill-opacity: 0.2;
+  stroke: white;
+  stroke-width: 2.3px;
+  stroke-dasharray: 200 188.5;
+  animation: stroke-color 11s infinite linear;
+}
+#p .wrapper, #p use {
+  animation: draw 4s infinite linear;  
+}
+#p use:nth-child(3){
+  fill: white;
+  fill-opacity: 0.1;
+  animation-delay: -2s;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 388.5;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes stroke-color {
+  0%      {stroke: hsl(  0,100%,70%);}
+  16.667% {stroke: hsl( 60,100%,70%);}
+  33.333% {stroke: hsl(120,100%,70%);}
+  50%     {stroke: hsl(180,100%,70%);}
+  66.667% {stroke: hsl(240,100%,70%);}
+  83.333% {stroke: hsl(300,100%,70%);}
+  100%    {stroke: hsl(360,100%,70%);}
+}
+/* @keyframes back-color {
+  0%      {background: hsl(  0,80%,15%);}
+  16.667% {background: hsl( 60,80%,15%);}
+  33.333% {background: hsl(120,80%,15%);}
+  50%     {background: hsl(180,80%,15%);}
+  66.667% {background: hsl(240,80%,15%);}
+  83.333% {background: hsl(300,80%,15%);}
+  100%    {background: hsl(360,80%,15%);}
+} */
+#project-form {
+  width: 80vw;
+  border: 2px solid var(--form-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  padding: 0.9em;
+}
+
+
+
+#project-form > input {
+  height: 3em;
+}
+
+#project-btn {
+  width: 8em;
+  text-transform: uppercase;
+}
+
+#navbar > li{
+  list-style-type: none;
+}
+ .profile-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .contact-form {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9em;
+  text-align: left;
+ }
+
+  #send-button {
+    width: 15%;
+    height: 2em;
+    color: black;
+    font-weight: 700;
+    background-color: rgb(255, 124, 2); 
+		text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+ .contact-form > input, .contact-form > textarea, #project-form > input {
+  width: 60%;
+  background-color: transparent;
+  
+  color: white;
+  border: none;
+  box-shadow: 
+		0 1px 3px rgba(255, 103, 2, 0.945), 
+		0 1px 2px rgba(0,0,0,0.24);
+  color: var(--form-text-color);  
+ }
+
+ #subject {
+  height: 3em;
+ }
+
+ #context {
+  height: 14em;
+ }
+.App-header {
+  background-color: var(--paper-bg);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  /* position: sticky; */
+  align-items: flex-end;
+  justify-content: center;
+  text-transform: uppercase;
+
+  opacity: 0.8;
+ 
+ 
+  /* box-shadow: rgba(255, 124, 2, 0.2) 0px 2px 8px 0px; */
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em;
+  
+}
+
+li {
+  list-style-type: square;
+  
+}
+.topsection {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--paper-bg); 
+  opacity: 0.8;
+  padding-top: 2.5em;
+  color: var(--text-color);
+  height: 50vh;
+  width: 80vw;
+
+} 
+.content-topsection {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 2em;
+
+}
+.career {
+  color: var(--title-color);
+  text-transform: uppercase;
+  animation: 3s anim-careers ease-in-out infinite;
+}
+
+.side-topsection {
+  min-width: 50vw;
+  height: 95%;
+  /* background-color: #181818be; */
+  box-shadow: rgba(255, 82, 2, 0.541) 0px 2px 8px 0px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: calc(60% + 7em);  
+  animation: back-color 40s infinite linear;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+  display: block;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 2em;
+  
+  animation: 2s anim-careers ease ;
+}
+.about {
+ text-align: center;
+ max-width: 80vw;
+ 
+}
+.about > h3 {
+  text-transform: uppercase;
+ 
+} 
+.skills {  
+  background-color: rgba(231, 231, 231, 0.137);
+  width: 80vw;
+}
+.skills > ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+
+}
+@keyframes anim-careers {
+ 0% {
+  opacity: 0;
+  transform: translateY(80%);
+ }
+ 50% {
+  opacity: 0.5;
+  transform: translateY(0%);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateY(0%);
+ }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
