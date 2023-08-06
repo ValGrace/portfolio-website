@@ -2,6 +2,8 @@ package main
 
 import (
 	"embed"
+	"os"
+
 	// "encoding/json"
 	"fmt"
 	"log"
@@ -44,6 +46,13 @@ func (h clientHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	http.FileServer(http.Dir(h.staticPath)).ServeHTTP(w, r)
 
 }
+func envPortOr(port string) string {
+
+	if envPort := os.Getenv("PORT"); envPort != "" {
+		return ":" + envPort
+	}
+	return ":" + port
+}
 
 func main() {
 
@@ -55,5 +64,6 @@ func main() {
 	fmt.Printf("Starting server at port 8080")
 
 	r.PathPrefix("/static").Handler(http.StripPrefix("/static", http.FileServer(http.Dir("../portfolio/build/static"))))
-	log.Fatal(http.ListenAndServe(":8080", r))
+	port := envPortOr("3000")
+	log.Fatal(http.ListenAndServe(port, r))
 }
