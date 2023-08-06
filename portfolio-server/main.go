@@ -4,11 +4,12 @@ import (
 	"embed"
 	// "encoding/json"
 	"fmt"
-	"github.com/ValGrace/portfolio-server/src/routes"
-	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	"path/filepath"
+
+	"github.com/ValGrace/portfolio-server/src/routes"
+	"github.com/gorilla/mux"
 )
 
 var staticFS embed.FS
@@ -48,11 +49,11 @@ func main() {
 
 	r := mux.NewRouter()
 	routes.RegisterProjectRoutes(r)
-	spa := clientHandler{staticPath: "../../portfolio/build", indexPath: "index.html"}
+	spa := clientHandler{staticPath: "../portfolio/build", indexPath: "index.html"}
 	r.PathPrefix("/").Handler(spa)
 	http.Handle("/", r)
 	fmt.Printf("Starting server at port 8080")
 
-	r.PathPrefix("/static").Handler(http.StripPrefix("/static", http.FileServer(http.Dir("../../portfolio/build/static"))))
+	r.PathPrefix("/static").Handler(http.StripPrefix("/static", http.FileServer(http.Dir("../portfolio/build/static"))))
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
