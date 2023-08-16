@@ -19,10 +19,6 @@ export const EcomModal = () => {
            
           </Space>
           <Divider />
-          
-          <Divider>Use Credentials To Log In </Divider> 
-          <Typography.Text>Email: <b>anyangog45@gmail.com</b></Typography.Text>
-          <Typography.Text>Password: <b>Test%%45acc</b></Typography.Text>
             <Space size={20}>
             <Button href="https://anypay-28455.web.app" target="blank">Live Link</Button>
             <Button href="https://github.com/ValGrace/ecommerce-project" type="primary" danger>Github Link</Button>
@@ -69,6 +65,9 @@ export const BlogModal = () => {
         </Space>
         <Divider />
         
+          <Divider>Use Credentials To Log In </Divider> 
+          <Typography.Text>Email: <b>anyangog45@gmail.com</b></Typography.Text>
+          <Typography.Text>Password: <b>Test%%45acc</b></Typography.Text>
         
           <Space size={60}>
           <Button href="https://blogsitegrt.onrender.com/login" target="blank">Live Link</Button>
