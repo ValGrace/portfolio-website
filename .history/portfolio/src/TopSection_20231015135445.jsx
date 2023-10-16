@@ -1,5 +1,5 @@
 import React from 'react'
-import imgsd from "./imgsd.png"
+import imgsd from "./girlgry.png"
 const TopSection = () => {
     return (
         <div className='topsection'>
