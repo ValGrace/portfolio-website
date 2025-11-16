@@ -12,6 +12,6 @@ require (
 	github.com/creasty/defaults v1.5.1 // indirect
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/google/uuid v1.2.0 // indirect
-	github.com/gorilla/schema v1.2.0 // indirect
+	github.com/gorilla/schema v1.4.1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 )
