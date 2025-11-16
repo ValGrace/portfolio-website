@@ -1,5 +1,5 @@
 import React, {useState, useRef} from "react";
-import "./UploadPhoto.css"
+import "../UploadPhoto.css"
 import { BsFillCameraFill} from 'react-icons/bs'
 const ProjectsForm = () => {
   const [title, setTitle] = useState('')

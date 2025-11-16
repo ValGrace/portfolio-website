@@ -23,7 +23,7 @@
 
   #minip {
 	background-color: var(--dgreen);
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	color: var(--beige);
 	text-align: center;
   }
@@ -84,7 +84,7 @@
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
-	background: url('./ecomlogo.png');
+	background: url('./assets/ecomlogo.png');
 	background-position: top center;
 	background-size: cover;
 	transition:
@@ -105,7 +105,7 @@
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
-	background: url('./a\ logo\ illustrating\ a\ generated\ static\ website.png');
+	background: url('./assets/a\ logo\ illustrating\ a\ generated\ static\ website.png');
 	background-position: top center;
 	background-size: cover;
 	transition:

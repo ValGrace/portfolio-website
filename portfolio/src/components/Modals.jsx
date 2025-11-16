@@ -1,6 +1,6 @@
 import {  Button, Typography, Space, Tag, Divider} from "antd"
-import ecomhome from "./ecom-home.PNG"
-import sstg from "./sstg.PNG"
+import ecomhome from "../assets/ecom-home.PNG"
+import sstg from "../assets/sstg.PNG"
 export const EcomModal = () => {
       const bgStyle = {
         height: "0.5%",
@@ -21,7 +21,7 @@ export const EcomModal = () => {
           <Divider />
           
           <Divider>Use Credentials To Log In </Divider> 
-          <Typography.Text>Email: <b>anyangog45@gmail.com</b></Typography.Text>
+          <Typography.Text>Email: <b>testacc@gmail.com</b></Typography.Text>
           <Typography.Text>Password: <b>Test%%45acc</b></Typography.Text>
             <Space size={20}>
             <Button href="https://anypay-28455.web.app" target="blank">Live Link</Button>

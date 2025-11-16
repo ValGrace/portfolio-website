@@ -1,6 +1,5 @@
-import React, { useState} from "react"
-// import { Link } from "react-router-dom"
-import './Projects.scss'
+import { useState} from "react"
+import '../Projects.scss'
 // import ecomproj from "./ecom-home.PNG"
 import { Modal } from "antd"
 import { EcomModal, BlogModal } from "./Modals"
@@ -53,10 +52,12 @@ const Projects = () => {
   <div className="plot" title="static site" onClick={() => setSecModal(true)}>
     view project →
   </div>
-  <Modal open={secModal} onOk={() => setSecModal(false)} onCancel={() => setSecModal(false)} title="Ecommerce Marketplace" okText="Close">
+  <Modal open={secModal} onOk={() => setSecModal(false)} onCancel={() => setSecModal(false)} title="Blogs" okText="Close">
     {<BlogModal />}
   </Modal>
 </div>
+
+
             {/* <button className="new-proj"><Link to="/projects">add new project</Link></button>   */}
           
         </>

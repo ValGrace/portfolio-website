@@ -1,11 +1,11 @@
-import NavSection from './Navbar';
+import NavSection from './components/Navbar';
 
-import Routing from './Routing';
-import './App.css';
+import Routing from './components/Routing';
+import './styles/global.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="min-h-screen bg-[#0a0a0a] text-white">
      
        <NavSection /> 
        
