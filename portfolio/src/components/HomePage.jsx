@@ -3,6 +3,7 @@ import TopSection from './TopSection'
 import Projects from './Projects'
 import Contact from './Contact'
 import SvgIcon from './SvgIcon'
+import Articles from './Articles'
 // import ProjectsForm from './ProjectsForm'
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
         <Projects />
         </div>
         <SvgIcon />
+        <Articles />
         <Contact />
         {/* <ProjectsForm /> */}
         </>
