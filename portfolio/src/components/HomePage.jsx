@@ -2,23 +2,27 @@ import Profile from './ProfileSection'
 import TopSection from './TopSection'
 import Projects from './Projects'
 import Contact from './Contact'
-import SvgIcon from './SvgIcon'
 import Articles from './Articles'
+import { SectionConnector } from './SectionConnector'
 // import ProjectsForm from './ProjectsForm'
 
 const HomePage = () => {
     return (
         <>
         <TopSection />
+        <SectionConnector/>
         <Profile />
+
         {/* <Skillset /> */}
         {/* <h2>Projects</h2> */}
-        <div className='grid md:grid-cols-3'>
+        <div className='grid md:grid-cols-3 gap-0 mx-auto max-w-7xl px-6 py-20'>
         
         <Projects />
+        
         </div>
-        <SvgIcon />
+        
         <Articles />
+        <SectionConnector/>
         <Contact />
         {/* <ProjectsForm /> */}
         </>

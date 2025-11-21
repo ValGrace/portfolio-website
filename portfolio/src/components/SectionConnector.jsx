@@ -84,9 +84,9 @@ export function SectionConnector({ position }) {
             {/* Gradients */}
             <defs>
               <linearGradient id="gradient1" x1="20" y1="0" x2="20" y2="80">
-                <stop offset="0%" stopColor="#ec4899" stopOpacity="0.3" />
-                <stop offset="50%" stopColor="#ec4899" stopOpacity="1" />
-                <stop offset="100%" stopColor="#ec4899" stopOpacity="0.3" />
+                <stop offset="0%" stopColor="#6148ecff" stopOpacity="0.3" />
+                <stop offset="50%" stopColor="#485becff" stopOpacity="1" />
+                <stop offset="100%" stopColor="#48c0ecff" stopOpacity="0.3" />
               </linearGradient>
               <linearGradient id="gradient2" x1="20" y1="0" x2="20" y2="80">
                 <stop offset="0%" stopColor="#db2777" stopOpacity="0.3" />
@@ -99,8 +99,8 @@ export function SectionConnector({ position }) {
                 <stop offset="100%" stopColor="#a855f7" stopOpacity="0.3" />
               </linearGradient>
               <linearGradient id="gradient4" x1="20" y1="28" x2="20" y2="52">
-                <stop offset="0%" stopColor="#ec4899" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#a855f7" stopOpacity="0.8" />
+                <stop offset="0%" stopColor="#4894ecff" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#5578f7ff" stopOpacity="0.8" />
               </linearGradient>
             </defs>
           </svg>

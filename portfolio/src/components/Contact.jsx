@@ -1,6 +1,8 @@
 import { motion} from "motion/react";
 import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 import { useInView } from "../hooks/useInView";
+import SvgContIcon from "./ContactSvg";
+
 
 
 const socialLinks = [
@@ -60,6 +62,7 @@ const Contact = () => {
             <p className="text-gray-400">
               © 2025 Grace V. Anyango.
             </p>
+            
           </motion.div>
         </motion.div>
       </div>

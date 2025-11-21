@@ -1,5 +1,6 @@
 import { useState} from "react"
 import '../Projects.scss'
+import SvgProjIcon from "./SvgProjIcon"
 // import ecomproj from "./ecom-home.PNG"
 import { Modal } from "antd"
 import { EcomModal, BlogModal } from "./Modals"
@@ -11,7 +12,9 @@ const Projects = () => {
         <>
         <div className="minip" id="minip">
             <h2>View some of my projects...</h2>
+            
         </div>
+        
            <div className="minip">
   <div className="mg">
     <div className="clr"></div>

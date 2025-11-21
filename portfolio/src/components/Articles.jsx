@@ -4,13 +4,13 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const articles = [
   {
-    title: "Public Vs Private IP Addresses",
+    title: "How Cloudflare broke the internet",
     description:
-      "Understanding the differences between public and private IP addresses, is crucial to networking and how devices communicate on the internet",
-    date: "Jul 28, 2025",
-    readTime: "2 min read",
-    tags: ["Networking"],
-    link: "https://medium.com/@gracevalerie1/public-vs-private-ip-addresses-85c2d07d8ffe",
+      "A look into the Cloudflare outage that affected a significant portion of the internet, exploring how a bad query was responsible for such a huge mishap.",
+    date: "Nov 20, 2025",
+    readTime: "3 min read",
+    tags: ["Cloudflare", "SQL", "Databases"],
+    link: "https://medium.com/@gracevalerie1/how-cloudflare-broke-the-internet-496035a4f29e",
   },
   {
     title: "How to Install Golang Mockery on Windows?",
