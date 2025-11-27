@@ -14,6 +14,10 @@ const Projects = () => {
             <h2>View some of my projects...</h2>
             
         </div>
+        <div className="minip" id="minip">
+            <h2>View some of my projects...</h2>
+            
+        </div>
         
            <div className="minip">
   <div className="mg">
@@ -26,7 +30,7 @@ const Projects = () => {
   <div className="info" id="info">
   <div className="name">ecommerce</div>
     <div className="deets">
-      369  react/node<br />
+      react/node<br />
       tech marketplace
     </div>
   </div>
@@ -49,7 +53,7 @@ const Projects = () => {
   <div className="name">blog generator</div>
     <div className="deets">
         react/golang<br />
-      static site generator
+      static sites
     </div>
   </div>
   <div className="plot" title="static site" onClick={() => setSecModal(true)}>

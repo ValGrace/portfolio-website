@@ -1,8 +1,6 @@
 import { motion} from "motion/react";
 import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 import { useInView } from "../hooks/useInView";
-import SvgContIcon from "./ContactSvg";
-
 
 
 const socialLinks = [
@@ -26,8 +24,7 @@ const Contact = () => {
         >
           <h2 className="mb-6">Let's Work Together</h2>
           <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
-            I'm always interested in hearing about new projects and opportunities. Whether you have
-            a question or just want to say hi, feel free to reach out!
+            I'm open to working and collaborating on exciting projects. Feel free to contact me and i'll answer any question you may have.
           </p>
 
           <motion.div
@@ -45,7 +42,7 @@ const Contact = () => {
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-6 py-3 border border-emerald-500/20 hover:border-emerald-500/40 bg-emerald-500/5 hover:bg-emerald-500/10 rounded-lg transition-all group"
+                className="flex items-center gap-2 px-6 py-3 border border-emerald-500/20 hover:border-emerald-500/40 bg-emerald-500/5 hover:bg-emerald-500/10 transition-all group"
               >
                 <link.icon className="w-5 h-5 text-emerald-400 group-hover:text-emerald-300" />
                 <span className="text-gray-300 group-hover:text-white">{link.label}</span>
@@ -60,7 +57,7 @@ const Contact = () => {
             className="pt-12 border-t border-emerald-500/20"
           >
             <p className="text-gray-400">
-              © 2025 Grace V. Anyango.
+                Grace Valerie Anyango.
             </p>
             
           </motion.div>

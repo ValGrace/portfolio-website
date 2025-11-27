@@ -15,7 +15,7 @@ const HomePage = () => {
 
         {/* <Skillset /> */}
         {/* <h2>Projects</h2> */}
-        <div className='grid md:grid-cols-3 gap-0 mx-auto max-w-7xl px-6 py-20'>
+        <div className='grid md:grid-cols-3 gap-0 mx-auto justify-center items-center max-w-7xl px-6' id='projs'>
         
         <Projects />
         

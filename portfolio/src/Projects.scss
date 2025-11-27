@@ -1,21 +1,26 @@
   :root {
-	--white: #F7F1E1;
+	--white: #36827F;
   --cream: #F6E6CB;
-  --dcream: #EACEA3;
-  --beige: #CDAD93;
-  --terracotta: #10251e;;
+  --dcream: #877666;
+  --beige: #F9DB6D;
+  --terracotta: #464D77;
   --dterracotta: #885444;
   --peach: #070807;
   --orange: #BF835A;
   --green: rgba(4, 8, 7, 0.911);
   --dgreen: #10251e;
   --mono: 'source-code-pro';
-  --display: 'lust-sans';
+  --display: 'Proxima Nova';
+  }
+
+  #projs {
+	width: 77%;
   }
   .minip {
 	width: 300px;
 	height: 450px;
-	// margin: auto;
+	padding: 0px;
+	margin: auto;
 	background: var(--white);
 	position: relative;
 	box-shadow: 0px 0px 5px var(--terracotta);
