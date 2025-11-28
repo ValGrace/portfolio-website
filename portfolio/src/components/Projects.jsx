@@ -11,7 +11,7 @@ const Projects = () => {
     return (
         <>
         <div className="minip" id="minip">
-            <h2>View some of my projects...</h2>
+            <h2>VIEW SOME OF MY PROJECTS...</h2>
             
         </div>
         <div className="minip" id="minip">

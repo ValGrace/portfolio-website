@@ -40,11 +40,12 @@ export default function Profile() {
         >
           <h2 className="mb-6">ABOUT ME</h2>
           <p className="max-w-3xl mx-auto text-gray-300 leading-relaxed">
-            I studied software development at KCA University in Kenya. I enjoy using cutting edge
+            I built my skillset from a software engineering degree, lots of personal projects, online tutorials and collaborating with other developers. I have interests in AI, web security and cloud computing.
+            {/* I studied software development at KCA University in Kenya. I enjoy using cutting edge
             technology tools to address challenges. With a strong foundation in software
             engineering, I can confidently deliver a project from the requirements to a final
             implemented product. I am proficient in React, Node.JS, Golang programming and Cloud
-            and Devops technologies.
+            and Devops technologies. */}
           </p>
         </motion.div>
 
