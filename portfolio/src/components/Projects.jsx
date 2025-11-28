@@ -1,23 +1,41 @@
 import { useState} from "react"
 import '../Projects.scss'
-import SvgProjIcon from "./SvgProjIcon"
 // import ecomproj from "./ecom-home.PNG"
 import { Modal } from "antd"
-import { EcomModal, BlogModal } from "./Modals"
+import { EcomModal, DocsModal, BlogModal } from "./Modals"
 const Projects = () => {
    const [openModal, setOpenModal] = useState(false)
    const [secModal, setSecModal] = useState(false)
-    
+    const [thirdModal, setThirdModal] = useState(false)
     return (
         <>
         <div className="minip" id="minip">
             <h2>VIEW SOME OF MY PROJECTS...</h2>
             
         </div>
-        <div className="minip" id="minip">
-            <h2>View some of my projects...</h2>
-            
-        </div>
+        <div className="minip">
+  <div className="mg">
+    <div className="clr"></div>
+    <div className="group">
+      <span>47DOCS</span>
+    </div>
+  </div>
+  <div className="pav"></div>
+  <div className="info" id="info">
+  <div className="name">translator</div>
+    <div className="deets">
+      python/Gemini<br />
+      translate pdfs
+    </div>
+  </div>
+  <div className="plot" title="Document translator" onClick={() => setThirdModal(true)} >
+    view project →
+  </div>
+  <Modal open={thirdModal} onOk={() => setThirdModal(false)} onCancel={() => setThirdModal(false)} title="Document translator" okText="Close">
+    {<DocsModal />}
+  </Modal>
+</div>
+        
         
            <div className="minip">
   <div className="mg">

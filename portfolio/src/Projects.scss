@@ -81,7 +81,26 @@
 	  transform .6s linear;
   }
 
- 
+ .minip .pav {
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: url('./assets/47DOCS.png');
+	background-position: top center;
+	background-size: cover;
+	transition:
+	  width .6s linear,
+	  height .6s linear;
+  }
+  .minip:hover .pav {
+	width: 250px;
+	height: 400px;
+	transition:
+	  width .6s linear,
+	  height .6s linear;
+  }
   
   .minip .av {
 	width: 200px;
