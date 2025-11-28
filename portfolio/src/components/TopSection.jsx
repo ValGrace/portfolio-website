@@ -61,7 +61,7 @@ export function TopSection() {
             transition={{ delay: 0.4 }}
             className="text-emerald-400"
           >
-            <span className="text-emerald-300">A SOFTWARE ENGINEER</span>
+            <span className="text-emerald-300 mb-7">A SOFTWARE ENGINEER</span>
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

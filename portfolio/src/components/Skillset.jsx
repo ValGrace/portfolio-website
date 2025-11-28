@@ -1,6 +1,6 @@
 import { Code2, Database, Cloud } from "lucide-react";
 import { motion } from "motion/react";
-import { useInView } from "./hooks/useInView";
+import { useInView } from "../hooks/useInView";
 
 const skills = [
   {
