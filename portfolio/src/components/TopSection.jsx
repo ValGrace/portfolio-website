@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "../internal/ImageWithFallback";
-import heroImage from "../assets/PORT_RESs.png";
+import heroImage from "../assets/OIPsss.png";
 
 export function TopSection() {
   return (
@@ -111,7 +111,7 @@ export function TopSection() {
             <ImageWithFallback
               src={heroImage}
               alt="Grace V. Anyango"
-              className="relative z-10 w-full h-auto"
+              className="relative z-10 w-quto h-auto"
             />
           </motion.div>
         </motion.div>

@@ -8,21 +8,21 @@ const skills = [
     title: "Web Development",
     description:
       "I possess a comprehensive skill set in web development, leveraging react to build interactive interfaces and golang for implementing scalable APIs and backend solutions.",
-    technologies: ["HTML5", "JavaScript", "React", "Node.js", "Golang"],
+    technologies: ["HTML5", "JavaScript", "React", "Node.js", "Golang", "TypeScript"],
   },
   {
     icon: Database,
     title: "Software Engineering",
     description:
       "My Software Engineering degree equipped me with applicable skills in programming, following design principles and engineering practices, problem solving and adaptability to new technology.",
-    technologies: ["Design Patterns", "Algorithms", "Problem Solving", "Best Practices"],
+    technologies: ["System Design", "Algorithms", "Problem Solving", "Web Security"],
   },
   {
     icon: Cloud,
     title: "Cloud Computing and DevOps",
     description:
       "I have a solid grasp of how to utilise cloud services and tools such as serverless technology tools, setting up workflows and overall leveraging the cloud.",
-    technologies: ["Git", "Docker", "AWS", "CI/CD"],
+    technologies: ["Git", "Docker", "AWS", "CI/CD", "Serverless"],
   },
 ];
 
@@ -77,7 +77,7 @@ export default function Profile() {
                   {skill.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-300 rounded-full"
+                      className="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-300"
                     >
                       {tech}
                     </span>

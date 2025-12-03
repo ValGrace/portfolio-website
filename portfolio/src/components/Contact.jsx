@@ -36,7 +36,7 @@ const Contact = () => {
             {socialLinks.map((link, index) => (
               <motion.a
                 key={link.label}
-                href={link.href}
+                href={link.url}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
