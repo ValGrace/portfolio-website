@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "../internal/ImageWithFallback";
-import heroImage from "../assets/OIPsss.png";
+import heroImage from "../assets/PORT_RESs.png";
 
 export function TopSection() {
   return (

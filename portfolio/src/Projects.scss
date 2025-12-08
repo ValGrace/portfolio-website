@@ -1,8 +1,8 @@
   :root {
-	--white: #046644;
+	--white: #00a3d05b;
   --cream: #F6E6CB;
   --dcream: #877666;
-  --beige: #F9DB6D;
+  --beige: #fff7da;
   --terracotta: #464D77;
   --dterracotta: #885444;
   --peach: #070807;
@@ -80,7 +80,26 @@
 	transition:
 	  transform .6s linear;
   }
-
+.minip .gav {
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: url('./assets/CMDshot.png');
+	background-position: top center;
+	background-size: cover;
+	transition:
+	  width .6s linear,
+	  height .6s linear;
+  }
+  .minip:hover .gav {
+	width: 250px;
+	height: 400px;
+	transition:
+	  width .6s linear,
+	  height .6s linear;
+  }
  .minip .pav {
 	width: 200px;
 	height: 350px;

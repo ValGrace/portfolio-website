@@ -2,11 +2,12 @@ import { useState} from "react"
 import '../Projects.scss'
 // import ecomproj from "./ecom-home.PNG"
 import { Modal } from "antd"
-import { EcomModal, DocsModal, BlogModal } from "./Modals"
+import { EcomModal, DocsModal, BlogModal, CMDModal } from "./Modals"
 const Projects = () => {
    const [openModal, setOpenModal] = useState(false)
    const [secModal, setSecModal] = useState(false)
     const [thirdModal, setThirdModal] = useState(false)
+    const [cmdModal, setCMDModal] = useState(false)
     return (
         <>
         <div className="minip" id="minip">
@@ -85,22 +86,22 @@ const Projects = () => {
   <div className="mg">
     <div className="clr"></div>
     <div className="group">
-      <span>47DOCS</span>
+      <span>CMD-BASE</span>
     </div>
   </div>
-  <div className="pav"></div>
+  <div className="gav"></div>
   <div className="info" id="info">
-  <div className="name">translator</div>
+  <div className="name">history</div>
     <div className="deets">
-      python/Gemini<br />
-      translate pdfs
+      golang/powershell<br />
+      save used commands
     </div>
   </div>
-  <div className="plot" title="Document translator" onClick={() => setThirdModal(true)} >
+  <div className="plot" title="Terminal History" onClick={() => setCMDModal(true)} >
     view project →
   </div>
-  <Modal open={thirdModal} onOk={() => setThirdModal(false)} onCancel={() => setThirdModal(false)} title="Document translator" okText="Close">
-    {<DocsModal />}
+  <Modal open={cmdModal} onOk={() => setCMDModal(false)} onCancel={() => setCMDModal(false)} title="Document translator" okText="Close">
+    {<CMDModal />}
   </Modal>
 </div>
         
