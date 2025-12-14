@@ -72,7 +72,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-emerald-300: oklch(69.104% 0.12866 252.908);
     --color-emerald-400: oklch(.765 .177 163.223);
-    --color-emerald-500: oklch(40.564% 0.23324 287.525);
+    --color-emerald-500: oklch(41.673% 0.25582 278.086);
     --color-emerald-600: oklch(.596 .145 163.225);
     --color-teal-500: oklch(.704 .14 182.503);
     --color-gray-100: oklch(.967 .003 264.542);
@@ -871,6 +871,10 @@
     .border-emerald-500\/40 {
       border-color: color-mix(in oklab, var(--color-emerald-500) 40%, transparent);
     }
+  }
+
+  #articles {
+    background-color: #070608e3;
   }
 
   .bg-\[\#0a0a0a\] {

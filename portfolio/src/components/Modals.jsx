@@ -162,14 +162,10 @@ export const CMDModal = () => {
         
         
           <Space size={60}>
-          <Button href="https://blogsitegrt.onrender.com/login" target="blank">Live Link</Button>
+          
           <Button href="https://github.com/ValGrace/terminal-ui" type="primary" danger>Github Link</Button>
           </Space>
-          <Typography.Title>Problem Statement</Typography.Title>
-          <Divider />
-          <Typography.Text>Public participation exercise often fails because the target communities are not proficient in English which the default language used to engage with the public. Across many government projects and documents, communities that are not native English or Swahili speakers are often secluded due to the barrier or minimal understanding of the language.    </Typography.Text>
-          <Typography.Title>Objective</Typography.Title>
-          <Typography.Text>To build a platform that easily translates documents while retaining the original document layout so as to retain the original meaning.</Typography.Text>
+         
           <Typography.Title>Technology Used</Typography.Title>
           <Space size={[0, 20]} wrap>
             <Tag color="purple">Golang</Tag>

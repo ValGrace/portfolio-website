@@ -10,7 +10,6 @@ const HomePage = () => {
     return (
         <>
         <TopSection />
-        <SectionConnector/>
         <Profile />
 
         {/* <Skillset /> */}
@@ -22,7 +21,6 @@ const HomePage = () => {
         </div>
         
         <Articles />
-        <SectionConnector/>
         <Contact />
         {/* <ProjectsForm /> */}
         </>

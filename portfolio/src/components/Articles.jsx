@@ -80,7 +80,7 @@ export default function Articles() {
             >
               <a
                 href={article.link}
-                className="block h-full p-6 rounded-lg border border-emerald-500/20 bg-gradient-to-br from-emerald-500/5 to-transparent hover:border-emerald-500/40 hover:from-emerald-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
+                className="block h-full p-6 border border-emerald-500/20 bg-gradient-to-br from-emerald-500/5 to-transparent hover:border-emerald-500/40 hover:from-emerald-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
               >
                 <div className="flex items-center gap-4 text-sm text-gray-400 mb-4">
                   <div className="flex items-center gap-2">

@@ -55,7 +55,7 @@ export default function Profile() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-12"
         >
-          <h3 className="text-center mb-12 text-gray-200">SKILLSET</h3>
+          <h3 className="text-center mb-7 text-gray-200">SKILLSET</h3>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
