@@ -17,7 +17,7 @@ export const EcomModal = () => {
        
             <Typography.Title>Ecommerce Web app</Typography.Title>
             <Space>
-                   <img src={ecomhome} alt="app cover" style={bgStyle}/>  
+                   <img src={ecomhome} alt="Ecommerce app cover" style={bgStyle}/>  
            
           </Space>
           <Divider />
@@ -66,7 +66,7 @@ export const BlogModal = () => {
      
           <Typography.Title>Static Site Generator</Typography.Title>
           <Space>
-                 <img src={sstg} alt="app cover" style={bgStyle}/>  
+                 <img src={sstg} alt="Site generator cover" style={bgStyle}/>  
         
         </Space>
         <Divider />
@@ -112,7 +112,7 @@ export const DocsModal = () => {
      
           <Typography.Title>PDF Translator Engine</Typography.Title>
           <Space>
-                 <img src={docs47} alt="app cover" style={bgStyle}/>  
+                 <img src={docs47} alt="Translator engine cover" style={bgStyle}/>  
         
         </Space>
         <Divider />
@@ -171,6 +171,48 @@ export const CMDModal = () => {
             <Tag color="purple">Golang</Tag>
             <Tag color="purple">SQLite</Tag>
             <Tag color="purple">Powershell</Tag>
+                      
+            
+          </Space>
+         
+</>
+     
+  )
+}
+
+export const TicketsModal = () => {
+    const bgStyle = {
+      height: "0.5%",
+      width: "95%"
+    }
+  //   const imgStyle = {
+  //     height: "95%",
+  //     width: "95%"
+  //   }
+  return (
+      <>
+     
+          <Typography.Title>Ticket Sales Platform</Typography.Title>
+          <Space>
+                 <img src={cmd} alt="Tickets platform cover" style={bgStyle}/>  
+        
+        </Space>
+        <Divider />
+        
+        
+          <Space size={60}>
+          
+          <Button href="https://github.com/ValGrace/ticketing" type="primary" danger>Github Link</Button>
+          </Space>
+         
+          <Typography.Title>Technology Used</Typography.Title>
+          <Space size={[0, 20]} wrap>
+            <Tag color="purple">Next</Tag>
+            <Tag color="purple">Postgres</Tag>
+            <Tag color="purple">Docker</Tag>
+            <Tag color="purple">React</Tag>
+            <Tag color="purple">Postgres</Tag>
+            <Tag color="purple">Docker</Tag>
                       
             
           </Space>

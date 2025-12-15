@@ -110,15 +110,15 @@ const Projects = () => {
   <div className="mg">
     <div className="clr"></div>
     <div className="group">
-      <span>anypay</span>
+      <span>tickets</span>
     </div>
   </div>
   <div className="av"></div>
   <div className="info" id="info">
-  <div className="name">ecommerce</div>
+  <div className="name">ticket sale</div>
     <div className="deets">
-      react/node<br />
-      tech marketplace
+      typescript/next/react<br />
+      buy and sell tickets
     </div>
   </div>
   <div className="plot" title="ecommerce project" onClick={() => setOpenModal(true)} >
