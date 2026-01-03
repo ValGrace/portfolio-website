@@ -113,7 +113,7 @@ const Projects = () => {
       <span>tickets</span>
     </div>
   </div>
-  <div className="av"></div>
+  <div className="axs"></div>
   <div className="info" id="info">
   <div className="name">ticket sale</div>
     <div className="deets">
@@ -128,28 +128,7 @@ const Projects = () => {
     {<EcomModal />}
   </Modal>
 </div>
-<div className="minip">
-  <div className="mg">
-    <div className="clr"></div>
-    <div className="group">
-      <span>Sculptor</span>
-    </div>
-  </div>
-  <div className="avs"></div>
-  <div className="info" id="info">
-  <div className="name">blog generator</div>
-    <div className="deets">
-        react/golang<br />
-      static sites
-    </div>
-  </div>
-  <div className="plot" title="static site" onClick={() => setSecModal(true)}>
-    view project →
-  </div>
-  <Modal open={secModal} onOk={() => setSecModal(false)} onCancel={() => setSecModal(false)} title="Blogs" okText="Close">
-    {<BlogModal />}
-  </Modal>
-</div>
+
 
 
             {/* <button className="new-proj"><Link to="/projects">add new project</Link></button>   */}

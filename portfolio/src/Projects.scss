@@ -81,12 +81,12 @@
 	  transform .6s linear;
   }
 .minip .gav {
-	width: 200px;
-	height: 350px;
+	width: 250px;
+	height: 400px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
-	background: url('./assets/CMDshot.png');
+	background: url('./assets/OIG5.png');
 	background-position: top center;
 	background-size: cover;
 	transition:
@@ -101,8 +101,8 @@
 	  height .6s linear;
   }
  .minip .pav {
-	width: 200px;
-	height: 350px;
+	width: 250px;
+	height: 400px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
@@ -122,8 +122,8 @@
   }
   
   .minip .av {
-	width: 200px;
-	height: 350px;
+	width: 250px;
+	height: 400px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
@@ -142,9 +142,30 @@
 	  height .6s linear;
   }
 
+  .minip .axs {
+	width: 250px;
+	height: 400px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: url('./assets/OIG4.jpg');
+	background-position: top center;
+	background-size: cover;
+	transition:
+	  width .6s linear,
+	  height .6s linear;
+  }
+  .minip:hover .avs {
+	width: 250px;
+	height: 400px;
+	transition:
+	  width .6s linear,
+	  height .6s linear;
+  }
+
   .minip .avs {
-	width: 200px;
-	height: 350px;
+	width: 250px;
+	height: 400px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
