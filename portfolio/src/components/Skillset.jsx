@@ -6,23 +6,17 @@ const skills = [
   {
     icon: Code2,
     title: "Web Development",
-    description:
-      "I possess a comprehensive skill set in web development, leveraging react to build interactive interfaces and golang for implementing scalable APIs and backend solutions.",
     technologies: ["HTML5", "JavaScript", "React", "Node.js", "Golang", "TypeScript"],
   },
   {
     icon: Database,
-    title: "Software Engineering",
-    description:
-      "My Software Engineering degree equipped me with applicable skills in programming, following design principles and engineering practices, problem solving and adaptability to new technology. ",
-    technologies: ["Algorithms", "Problem Solving", "Web Security", "System Design"],
+    title: "Software & Data Engineering",
+    technologies: ["Algorithms", "Problem Solving", "Web Security", "System Design", "Power BI", "SQL"],
   },
   {
     icon: Cloud,
-    title: "Cloud Computing and DevOps",
-    description:
-      "I have a solid grasp of how to utilise cloud services and tools such as serverless technology tools, setting up workflows and overall leveraging the cloud.",
-    technologies: ["Git", "Docker", "AWS", "CI/CD", "Firebase"],
+    title: "Cloud Computing",
+    technologies: ["Git", "Docker", "AWS", "CI/CD", "Firebase", "Linux and Bash", "Powershell", "Networking" ],
   },
 ];
 const Skillset = () => {

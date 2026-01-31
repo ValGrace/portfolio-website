@@ -6,23 +6,17 @@ const skills = [
   {
     icon: Code2,
     title: "Web Development",
-    description:
-      "I possess a comprehensive skill set in web development, leveraging react to build interactive interfaces and golang for implementing scalable APIs and backend solutions.",
     technologies: ["HTML5", "JavaScript", "React", "Node.js", "Golang", "TypeScript"],
   },
   {
     icon: Database,
-    title: "Software Engineering",
-    description:
-      "My Software Engineering degree equipped me with applicable skills in programming, following design principles and engineering practices, problem solving and adaptability to new technology.",
-    technologies: ["System Design", "Algorithms", "Problem Solving", "Web Security"],
+    title: "Software and Data Engineering",
+    technologies: ["System Design", "Algorithms", "Problem Solving", "Web Security", "Power BI", "SQL", "APIS"],
   },
   {
     icon: Cloud,
     title: "Cloud Computing and DevOps",
-    description:
-      "I have a solid grasp of how to utilise cloud services and tools such as serverless technology tools, setting up workflows and overall leveraging the cloud.",
-    technologies: ["Git", "Docker", "AWS", "CI/CD", "Serverless"],
+    technologies: ["Git", "Docker", "AWS", "CI/CD", "Serverless", "Powershell", "Networking", "Linux"],
   },
 ];
 
@@ -40,7 +34,7 @@ export default function Profile() {
         >
           <h2 className="mb-6">ABOUT ME</h2>
           <p className="max-w-3xl mx-auto text-gray-300 leading-relaxed">
-            I built my skillset from a software engineering degree, lots of personal projects, online tutorials and collaborating with other developers. I have interests in AI, web security and cloud computing.
+            I built my skillset from a software engineering degree, lots of personal projects, online tutorials and collaborating with other developers. I have interests in data engineering, web security and cloud computing.
             {/* I studied software development at KCA University in Kenya. I enjoy using cutting edge
             technology tools to address challenges. With a strong foundation in software
             engineering, I can confidently deliver a project from the requirements to a final
@@ -72,12 +66,11 @@ export default function Profile() {
                   <skill.icon className="w-8 h-8 text-emerald-400" />
                 </div>
                 <h4 className="mb-4 text-gray-100">{skill.title}</h4>
-                <p className="text-gray-400 mb-4 leading-relaxed">{skill.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {skill.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-300"
+                      className="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-400"
                     >
                       {tech}
                     </span>
