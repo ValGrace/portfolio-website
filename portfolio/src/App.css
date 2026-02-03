@@ -14,7 +14,7 @@
 body {
   /* background-color: #151515; */
   color: var(--text-color);
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -53,7 +53,7 @@ body {
 #project-form > input {
   height: 3em;
 }
-#navbar {
+/* #navbar {
   background-color:rgba(4, 8, 7, 0.986);
   color: var(--paper-bg);
   min-height: 10vh;
@@ -63,13 +63,13 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0;
   padding: 0;
   
-}
+} */
 #project-btn {
   width: 2em;
   text-transform: uppercase;

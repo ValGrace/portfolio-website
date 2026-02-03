@@ -857,6 +857,10 @@
   .border-emerald-500 {
     border-color: var(--color-emerald-500);
   }
+  .border-gray-500 {
+    /* border-color: var(--color-gray-100); */
+    border-color: color-mix(in srgb, var(--color-gray-100) 20%, transparent);
+  }
 
   .border-emerald-500\/20 {
     border-color: color-mix(in srgb, oklch(.696 .17 162.48) 20%, transparent);
