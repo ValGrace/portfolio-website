@@ -14,13 +14,14 @@ const HomePage = () => {
 
         {/* <Skillset /> */}
         {/* <h2>Projects</h2> */}
+        
+        
+        <Articles />
         <div className='grid md:grid-cols-3 gap-0 mx-auto justify-center items-center max-w-7xl px-6' id='projs'>
         
         <Projects />
         
         </div>
-        
-        <Articles />
         <Contact />
         {/* <ProjectsForm /> */}
         </>
