@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "../internal/ImageWithFallback";
-import heroImage from "../assets/PORT_RESs.png";
+import heroImage from "../assets/portfolio_image.png";
 
 export function TopSection() {
   return (
@@ -62,6 +62,14 @@ export function TopSection() {
             className="text-emerald-400"
           >
             <span className="text-emerald-400 mb-7">A SOFTWARE ENGINEER</span>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="text-emerald-400"
+          >
+            <span className="text-gray-400 mb-">My goal is to build and design systems of the future</span>
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
