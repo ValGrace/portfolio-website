@@ -2,9 +2,7 @@ import Profile from './ProfileSection'
 import TopSection from './TopSection'
 import Projects from './Projects'
 import Contact from './Contact'
-import Articles from './Articles'
-import { SectionConnector } from './SectionConnector'
-// import ProjectsForm from './ProjectsForm'
+import {Articles} from './TechArticles'
 
 const HomePage = () => {
     return (
