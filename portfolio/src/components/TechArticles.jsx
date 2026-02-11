@@ -1,43 +1,19 @@
 import { motion } from "motion/react";
 import { useInView } from "../hooks/useInView";
 import { Calendar, Clock, ExternalLink } from "lucide-react";
-// import { ImageWithFallback } from "../figma/ImageWithFallback";
-import { useState } from "react";
 
 const trendingArticles = [
   {
-    title: "How Cloudflare broke the internet",
+    title: "Building Scalable APIs with Golang",
     description:
-      "A look into the Cloudflare outage that affected a significant portion of the internet, exploring how a bad query was responsible for such a huge mishap.",
-    date: "Nov 20, 2025",
-    readTime: "3 min read",
+      "A new AI-powered smartphone dominates the market with real-time translation and smart assistant. Analysts believe this marks a turning...",
+    date: "18/05/2025",
+    readTime: "8 min read",
     category: "Gadgets",
     categoryColor: "from-pink-500 to-pink-600",
-    image: "https://medium.com/@gracevalerie1/how-cloudflare-broke-the-internet-496035a4f29e",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "#",
     trending: true,
-  },
-  {
-    title: "Meta Unveils VR Glasses That Feel Like Reality",
-    description:
-      "Meta introduces ultra-light VR glasses with lifelike visuals and seamless interactions designed for next-gen digital experiences. The immersive quality makes it almost impossible to distinguish from reality.",
-    date: "18/05/2025",
-    readTime: "6 min read",
-    category: "Apps",
-    categoryColor: "from-red-500 to-red-600",
-    image: "https://images.unsplash.com/photo-1525459571112-472991c82d74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGdsYXNzZXN8ZW58MXx8fHwxNzcwMTMwODA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    link: "#",
-  },
-  {
-    title: "AI Chess Engine Defeats World Champions",
-    description:
-      "A revolutionary AI-powered chess engine demonstrates unprecedented strategic thinking and adaptation, defeating multiple world champions in tournament play.",
-    date: "17/05/2025",
-    readTime: "7 min read",
-    category: "Future",
-    categoryColor: "from-purple-500 to-purple-600",
-    image: "https://images.unsplash.com/photo-1763788427927-87bc7c1fbcf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwY2hlc3MlMjBzdHJhdGVneXxlbnwxfHx8fDE3NzAxMzA4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    link: "#",
   },
 ];
 
@@ -94,42 +70,13 @@ const readHistoryArticles = [
   },
 ];
 
-const categories = ["All", "Gadgets", "Apps", "Future"];
 
 export function Articles() {
   const [ref, isInView] = useInView({ threshold: 0.1 });
-  const [activeCategory, setActiveCategory] = useState("All");
 
   return (
-    <section id="articles" className="min-h-screen py-20 px-6 relative bg-[#01200F]" ref={ref}>
+    <section id="articles" className="min-h-screen py-12 px-6 relative bg-[#FFF]" ref={ref}>
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Category Tabs */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="flex gap-8 mb-12 border-b border-gray-800"
-        >
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`pb-4 px-1 text-sm font-medium transition-colors relative ${
-                activeCategory === category
-                  ? "text-white"
-                  : "text-gray-500 hover:text-gray-300"
-              }`}
-            >
-              {category}
-              {activeCategory === category && (
-                <motion.div
-                  layoutId="activeTab"
-                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#104F55] to-[#32746D]"
-                />
-              )}
-            </button>
-          ))}
-        </motion.div>
 
         {/* Two Column Layout */}
         <div className="grid lg:grid-cols-2 gap-8">
@@ -139,12 +86,12 @@ export function Articles() {
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl font-bold text-white mb-6"
+              className="text-xl font-bold text-white mb-5"
             >
               Trending News
             </motion.h2>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               {trendingArticles.map((article, index) => (
                 <motion.article
                   key={article.title}
@@ -155,28 +102,28 @@ export function Articles() {
                 >
                   <a
                     href={article.link}
-                    className="block relative rounded-xl overflow-hidden bg-[#011502]/50 border border-gray-800/50 hover:border-gray-700/50 transition-all duration-300"
+                    className="block relative rounded-lg overflow-hidden bg-[#0a1a0f] border border-gray-500 hover:border-gray-700/50 transition-all duration-300"
                   >
                     {/* Image with overlay */}
-                    <div className="relative h-48 overflow-hidden">
-                      {/* <ImageWithFallback
+                    <div className="relative h-44 overflow-hidden">
+                      <img
                         src={article.image}
                         alt={article.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      /> */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                      
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
                       {/* Category Badge on Image */}
-                      <div className="absolute top-4 left-4">
-                        <span className={`inline-block px-3 py-1 text-xs font-semibold text-white rounded-md bg-gradient-to-r ${article.categoryColor}`}>
+                      <div className="absolute top-3 left-3">
+                        <span className={`inline-block px-2.5 py-0.5 text-xs font-semibold text-white rounded bg-gradient-to-r ${article.categoryColor}`}>
                           {article.category}
                         </span>
                       </div>
 
                       {/* Trending Badge */}
                       {article.trending && (
-                        <div className="absolute top-4 right-4">
-                          <span className="inline-block px-3 py-1 text-xs font-semibold text-black rounded-md bg-gradient-to-r from-yellow-400 to-yellow-500">
+                        <div className="absolute top-3 right-3">
+                          <span className="inline-block px-2.5 py-0.5 text-xs font-semibold text-black rounded bg-gradient-to-r from-yellow-400 to-yellow-500">
                             Trending #1
                           </span>
                         </div>
@@ -184,27 +131,27 @@ export function Articles() {
                     </div>
 
                     {/* Content */}
-                    <div className="p-5">
-                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#9EC5AB] transition-colors">
+                    <div className="p-4">
+                      <h3 className="text-base font-semibold text-white mb-2 leading-tight group-hover:text-[#9EC5AB] transition-colors">
                         {article.title}
                       </h3>
 
-                      <p className="text-gray-400 text-sm mb-4 leading-relaxed line-clamp-2">
+                      <p className="text-gray-400 text-sm mb-3 leading-relaxed line-clamp-2">
                         {article.description}
                       </p>
 
                       {/* Meta Info */}
-                      <div className="flex items-center gap-4 text-xs text-gray-500">
+                      <div className="flex items-center gap-3 text-xs text-gray-500">
                         <div className="flex items-center gap-1">
-                          <Calendar className="w-3.5 h-3.5" />
+                          <Calendar className="w-3 h-3" />
                           <span>{article.date}</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <Clock className="w-3.5 h-3.5" />
+                          <Clock className="w-3 h-3" />
                           <span>{article.readTime}</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <ExternalLink className="w-3.5 h-3.5" />
+                          <ExternalLink className="w-3 h-3" />
                           <span>Source</span>
                         </div>
                       </div>
@@ -221,12 +168,12 @@ export function Articles() {
               initial={{ opacity: 0, x: 20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl font-bold text-white mb-6"
+              className="text-xl font-bold text-white mb-5"
             >
               Read History
             </motion.h2>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {readHistoryArticles.map((article, index) => (
                 <motion.article
                   key={article.title}
@@ -237,37 +184,37 @@ export function Articles() {
                 >
                   <a
                     href={article.link}
-                    className="block p-5 rounded-xl bg-[#011502]/50 border border-gray-800/50 hover:border-gray-700/50 hover:bg-[#011502]/70 transition-all duration-300"
+                    className="block p-4 rounded-lg bg-[#0a1a0f] border border-gray-800/30 hover:border-gray-700/50 hover:bg-[#0d1f14] transition-all duration-300"
                   >
                     {/* Category Badge */}
-                    <div className="mb-3">
-                      <span className={`inline-block px-3 py-1 text-xs font-semibold text-white rounded-md bg-gradient-to-r ${article.categoryColor}`}>
+                    <div className="mb-2.5">
+                      <span className={`inline-block px-2.5 py-0.5 text-xs font-semibold text-white rounded bg-gradient-to-r ${article.categoryColor}`}>
                         {article.category}
                       </span>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-base font-semibold text-white mb-2 group-hover:text-[#9EC5AB] transition-colors">
+                    <h3 className="text-sm font-semibold text-white mb-2 leading-tight group-hover:text-[#9EC5AB] transition-colors">
                       {article.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-400 text-sm mb-4 leading-relaxed line-clamp-2">
+                    <p className="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">
                       {article.description}
                     </p>
 
                     {/* Meta Info */}
-                    <div className="flex items-center gap-4 text-xs text-gray-500">
+                    <div className="flex items-center gap-3 text-xs text-gray-500">
                       <div className="flex items-center gap-1">
-                        <Calendar className="w-3.5 h-3.5" />
+                        <Calendar className="w-3 h-3" />
                         <span>{article.date}</span>
                       </div>
                       <div className="flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5" />
+                        <Clock className="w-3 h-3" />
                         <span>{article.readTime}</span>
                       </div>
                       <div className="flex items-center gap-1">
-                        <ExternalLink className="w-3.5 h-3.5" />
+                        <ExternalLink className="w-3 h-3" />
                         <span>Source</span>
                       </div>
                     </div>
@@ -278,15 +225,7 @@ export function Articles() {
           </div>
         </div>
 
-        {/* Recommended News Section (Optional) */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16"
-        >
-          <h2 className="text-2xl font-bold text-white mb-4">Recommended News</h2>
-        </motion.div>
+
       </div>
     </section>
   );
