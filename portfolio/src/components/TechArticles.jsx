@@ -4,69 +4,81 @@ import { Calendar, Clock, ExternalLink } from "lucide-react";
 
 const trendingArticles = [
   {
-    title: "Building Scalable APIs with Golang",
+    title: "How Cloudflare broke the internet",
     description:
-      "A new AI-powered smartphone dominates the market with real-time translation and smart assistant. Analysts believe this marks a turning...",
+      "A look into the Cloudflare outage that affected a significant portion of the internet, exploring how a bad query was responsible for such a huge mishap.",
     date: "18/05/2025",
-    readTime: "8 min read",
-    category: "Gadgets",
+    readTime: "3 min read",
+    category: "Cloudflare",
     categoryColor: "from-pink-500 to-pink-600",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "#",
     trending: true,
   },
+  {
+    title: "Useful Linux Commands for Data Engineers",
+    description:
+      "A deep dive into how data engineers can leverage linux commands to enhance their daily tasks and workflows",
+    date: "18/05/2025",
+    readTime: "4 min read",
+    category: "Linux",
+    categoryColor: "from-pink-500 to-pink-600",
+    image: "https://images.pexels.com/photos/11034131/pexels-photo-11034131.jpeg",
+    link: "https://dev.to/valgrace/useful-linux-commands-for-data-engineers-3082",
+    trending: false,
+  }
 ];
 
 const readHistoryArticles = [
   {
-    title: "Gen Z Flocks to Vexu: The New AI Social Media Platform",
+    title: "How to Install Golang Mockery on Windows?",
     description:
-      "A new AI-powered phone dominates the market with real-time translation and smart assistant...",
-    date: "18/05/2025",
-    readTime: "5 min read",
-    category: "Gadgets",
+      "This article is a lightweight guide on how to download golang mockery which is a package used to perform unit tests",
+    date: "February 28, 2025",
+    readTime: "3 min read",
+    category: "Golang",
     categoryColor: "from-pink-500 to-pink-600",
-    link: "#",
+    link: "https://www.geeksforgeeks.org/installation-guide/how-to-install-golang-mockery-on-windows/",
   },
   {
-    title: "Electric Cars to Dominate Asian Market by 2027",
+    title: "The Ultimate CSS Testing Toolbox",
     description:
-      "A new AI-powered phone dominates the market with real-time translation and smart assistant...",
-    date: "18/05/2025",
-    readTime: "5 min read",
-    category: "Future",
-    categoryColor: "from-purple-500 to-purple-600",
-    link: "#",
-  },
-  {
-    title: "Smartwatches Can Now Track Emotions with 89% Accuracy",
-    description:
-      "A new AI-powered phone dominates the market with real-time translation and smart assistant...",
+      "Testing front-end code is essential to ensure a seamless user experience. This article covers the different types of testing techniques and how to use different tools.",
     date: "18/05/2025",
     readTime: "7 min read",
-    category: "Apps",
-    categoryColor: "from-red-500 to-red-600",
-    link: "#",
+    category: "CSS",
+    categoryColor: "from-purple-500 to-purple-600",
+    link: "https://dev.to/valgrace/the-ultimate-css-testing-toolbox-4n2m",
   },
   {
-    title: "AI Chef Robot Goes Viral for Cooking Restaurant-Quality Meals",
+    title: "ProxyChaining",
     description:
-      "A new AI-powered phone dominates the market with real-time translation and smart assistant...",
+      "In a world where digital privacy is a myth, achieving total anonymity has been a top concern for many organizations and individuals. One technique that enables this is using proxychains.",
+    date: "18/05/2025",
+    readTime: "4 min read",
+    category: "Security",
+    categoryColor: "from-red-500 to-red-600",
+    link: "https://dev.to/valgrace/proxychaining-1c86",
+  },
+  {
+    title: "Data Manipulation Language in SQL",
+    description:
+      "A comprehensive guide to understanding and using Data Manipulation Language (DML) in SQL, including INSERT, UPDATE, and DELETE operations.",
+    date: "11/02/2026",
+    readTime: "5 min read",
+    category: "SQL",
+    categoryColor: "from-pink-500 to-pink-600",
+    link: "https://medium.com/@gracevalerie1/data-manipulation-language-in-sql-c84e9e3c2836",
+  },
+  {
+    title: "Data Definition Language in SQL",
+    description:
+      "A comprehensive guide to understanding and using Data Definition Language (DDL) in SQL, including CREATE, ALTER, and DROP operations.",
     date: "18/05/2025",
     readTime: "5 min read",
-    category: "Gadgets",
-    categoryColor: "from-pink-500 to-pink-600",
-    link: "#",
-  },
-  {
-    title: "Quantum Computing Breakthrough Promises Faster AI Training",
-    description:
-      "A new AI-powered phone dominates the market with real-time translation and smart assistant...",
-    date: "18/05/2025",
-    readTime: "9 min read",
-    category: "Future",
+    category: "SQL",
     categoryColor: "from-purple-500 to-purple-600",
-    link: "#",
+    link: "https://medium.com/@gracevalerie1/data-definition-language-commands-in-sql-55fa158e88b8",
   },
 ];
 
@@ -88,7 +100,7 @@ export function Articles() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl font-bold text-white mb-5"
             >
-              Trending News
+             My Technical Articles
             </motion.h2>
 
             <div className="space-y-5">
@@ -102,7 +114,7 @@ export function Articles() {
                 >
                   <a
                     href={article.link}
-                    className="block relative rounded-lg overflow-hidden bg-[#0a1a0f] border border-gray-500 hover:border-gray-700/50 transition-all duration-300"
+                    className="block relative rounded-lg overflow-hidden border border-emerald-500/20 bg-gradient-to-b from-emerald-500/5 to-transparent hover:border-gray-700/50 transition-all duration-300"
                   >
                     {/* Image with overlay */}
                     <div className="relative h-44 overflow-hidden">
@@ -124,7 +136,7 @@ export function Articles() {
                       {article.trending && (
                         <div className="absolute top-3 right-3">
                           <span className="inline-block px-2.5 py-0.5 text-xs font-semibold text-black rounded bg-gradient-to-r from-yellow-400 to-yellow-500">
-                            Trending #1
+                            Databases
                           </span>
                         </div>
                       )}
@@ -170,7 +182,7 @@ export function Articles() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl font-bold text-white mb-5"
             >
-              Read History
+              More Stories...
             </motion.h2>
 
             <div className="space-y-3">
@@ -184,7 +196,7 @@ export function Articles() {
                 >
                   <a
                     href={article.link}
-                    className="block p-4 rounded-lg bg-[#0a1a0f] border border-gray-800/30 hover:border-gray-700/50 hover:bg-[#0d1f14] transition-all duration-300"
+                    className="block p-4 rounded-lg border border-emerald-500/20 bg-gradient-to-b from-emerald-500/5 to-transparent hover:border-gray-700/50 hover:bg-[#0d1f14] transition-all duration-300"
                   >
                     {/* Category Badge */}
                     <div className="mb-2.5">

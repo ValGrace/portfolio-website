@@ -898,11 +898,11 @@
     background-color: oklab(14.4788% 7.45058e-9 7.45058e-9 / .9);
   }
   .bg-\[\#0a1a0f\] {
-    background-color: #0a1a0f;
+    background-color: #a40e4c4d;
   }
 
   .bg-\[\#0a0a0a\]\/95 {
-    background-color: oklab(14.4788% 7.45058e-9 7.45058e-9 / .95);
+    background-color: #9ec5ab7a;
   }
 
   .bg-\[\#E5E5CB\] {
@@ -1946,7 +1946,7 @@ html {
 
   @media (hover: hover) {
     .hover\:bg-\[\#0d1f14\]:hover {
-      background-color: #0d1f14;
+      background-color: #15151596;
     }
   }
 
