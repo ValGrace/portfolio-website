@@ -1,5 +1,5 @@
   :root {
-	--white: #00d0bb5b;
+	--white: rgba(250, 0, 104, 0.26);
   --cream: #F6E6CB;
   --dcream: #877666;
   --beige: #fff7da;
@@ -58,7 +58,7 @@
   }
   .minip .mg .clr {
 	grid-area: clr;
-	background: var(--green);
+	background: rgba(12, 8, 24, 0.911);
   }
   .minip .mg .group {
 	font: 10px/10px var(--mono);
