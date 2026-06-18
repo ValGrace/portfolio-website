@@ -7,7 +7,7 @@ const trendingArticles = [
     title: "How Cloudflare broke the internet",
     description:
       "A look into the Cloudflare outage that affected a significant portion of the internet, exploring how a bad query was responsible for such a huge mishap.",
-    date: "18/05/2025",
+    date: "November 20, 2025",
     readTime: "3 min read",
     category: "Cloudflare",
     categoryColor: "from-pink-500 to-pink-600",
@@ -19,7 +19,7 @@ const trendingArticles = [
     title: "Useful Linux Commands for Data Engineers",
     description:
       "A deep dive into how data engineers can leverage linux commands to enhance their daily tasks and workflows",
-    date: "18/05/2025",
+    date: "January 26, 2026",
     readTime: "4 min read",
     category: "Linux",
     categoryColor: "from-pink-500 to-pink-600",
@@ -41,14 +41,14 @@ const readHistoryArticles = [
     link: "https://www.geeksforgeeks.org/installation-guide/how-to-install-golang-mockery-on-windows/",
   },
   {
-    title: "The Ultimate CSS Testing Toolbox",
+    title: "Build an ETL pipeline with Kafka and Cassandra",
     description:
-      "Testing front-end code is essential to ensure a seamless user experience. This article covers the different types of testing techniques and how to use different tools.",
-    date: "18/05/2025",
-    readTime: "7 min read",
-    category: "CSS",
+      "Build an end to end real time ETL pipeline that streams data through kafka producers and consumers then stores events in Cassandra.",
+    date: "June 01, 2026",
+    readTime: "8 min read",
+    category: "Data Engineering",
     categoryColor: "from-purple-500 to-purple-600",
-    link: "https://dev.to/valgrace/the-ultimate-css-testing-toolbox-4n2m",
+    link: "https://medium.com/@gracevalerie1/build-an-etl-pipeline-with-kafka-and-cassandra-7b374824bc27",
   },
   {
     title: "ProxyChaining",
@@ -71,14 +71,14 @@ const readHistoryArticles = [
     link: "https://medium.com/@gracevalerie1/data-manipulation-language-in-sql-c84e9e3c2836",
   },
   {
-    title: "Data Definition Language in SQL",
+    title: "How to import local and cloud PostgreSQL databases to Power BI",
     description:
-      "A comprehensive guide to understanding and using Data Definition Language (DDL) in SQL, including CREATE, ALTER, and DROP operations.",
-    date: "18/05/2025",
+      "Learn how to easily connect your PostgreSQL database to power BI, whether it is running locally or on a cloud platform like Aiven and AWS",
+    date: "March 19, 2026",
     readTime: "5 min read",
-    category: "SQL",
+    category: "AWS",
     categoryColor: "from-purple-500 to-purple-600",
-    link: "https://medium.com/@gracevalerie1/data-definition-language-commands-in-sql-55fa158e88b8",
+    link: "https://medium.com/@gracevalerie1/how-to-import-local-and-cloud-postgresql-databases-to-power-bi-792653f37fc2",
   },
 ];
 
