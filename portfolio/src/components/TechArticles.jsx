@@ -61,16 +61,6 @@ const readHistoryArticles = [
     link: "https://dev.to/valgrace/proxychaining-1c86",
   },
   {
-    title: "Data Manipulation Language in SQL",
-    description:
-      "A comprehensive guide to understanding and using Data Manipulation Language (DML) in SQL, including INSERT, UPDATE, and DELETE operations.",
-    date: "11/02/2026",
-    readTime: "5 min read",
-    category: "SQL",
-    categoryColor: "from-pink-500 to-pink-600",
-    link: "https://medium.com/@gracevalerie1/data-manipulation-language-in-sql-c84e9e3c2836",
-  },
-  {
     title: "How to import local and cloud PostgreSQL databases to Power BI",
     description:
       "Learn how to easily connect your PostgreSQL database to power BI, whether it is running locally or on a cloud platform like Aiven and AWS",
@@ -88,20 +78,21 @@ export function Articles() {
 
   return (
     <section id="articles" className="min-h-screen py-12 px-6 relative bg-[#FFF]" ref={ref}>
-      <div className="max-w-7xl mx-auto relative z-10">
-
-        {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Trending News */}
-          <div>
-            <motion.h2
+      <div className="max-w-5xl mx-auto relative z-10">
+        <motion.h1
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl font-bold text-white mb-5"
+              className="text-2xl font-bold text-white mb-5 text-center"
             >
-             My Technical Articles
-            </motion.h2>
+             My technical articles
+            </motion.h1>
+        {/* Two Column Layout */}
+        <div className="grid lg:grid-cols-2 gap-8">
+          
+          {/* Trending News */}
+          <div>
+            
 
             <div className="space-y-5">
               {trendingArticles.map((article, index) => (
@@ -176,15 +167,7 @@ export function Articles() {
 
           {/* Read History */}
           <div>
-            <motion.h2
-              initial={{ opacity: 0, x: 20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl font-bold text-white mb-5"
-            >
-              More Stories...
-            </motion.h2>
-
+           
             <div className="space-y-3">
               {readHistoryArticles.map((article, index) => (
                 <motion.article

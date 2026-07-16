@@ -5,7 +5,7 @@ import heroImage from "../assets/xprofile.png";
 
 export function TopSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+    <section className="min-h-less-screen flex items-center justify-center px-6 relative overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 opacity-30">
         <motion.div
@@ -34,7 +34,7 @@ export function TopSection() {
         />
       </div>
 
-      <div className="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-5xl w-full grid md:grid-cols-2 gap-4 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -52,7 +52,7 @@ export function TopSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="mb-6"
+            className="mb-6 font-plexSerif"
           >
             Grace V. Anyango
           </motion.h1>
@@ -70,7 +70,7 @@ export function TopSection() {
             transition={{ delay: 0.4 }}
             className="text-emerald-400"
           >
-            <span className="text-gray-400 mb-">My goal is to build and design systems that solve real-world problems from existing data</span>
+            <span className="text-white mb-">I build data centered applications, and prepare quality data for data pratictioners and stakeholders.</span>
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ export function TopSection() {
             <ImageWithFallback
               src={heroImage}
               alt="Grace V. Anyango"
-              className="relative z-10 w-quto h-auto"
+              className="relative z-10 w-auto h-auto"
             />
           </motion.div>
         </motion.div>
