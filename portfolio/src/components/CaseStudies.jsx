@@ -51,10 +51,10 @@ export default function CaseStudies() {
               </span>
               <span className="brand-name">Exchange Liquidation</span>
             </div>
-            <h3 className="case-card-title">Stress reduction for frontline workers</h3>
-            <p className="case-card-desc">Help frontline workers recover with the healing power of nature sounds</p>
+            <h3 className="case-card-title">Cryptocurrency market aggregation for traders</h3>
+            <p className="case-card-desc">For traders and analysts to spot risk, and possible arbitrage opportunities before the market moves too far</p>
             <svg className="art" viewBox="0 0 260 260">
-              <image href="https://media.istockphoto.com/id/1463455851/photo/cryptocurrency-market-financial-data-and-candlesticks-internet-banking.jpg?s=1024x1024&w=is&k=20&c=iTK_kYVDlAibVlQ7L-CgR0NVezeg5mhS0Jk8lVyLHdc=" x="-20" y="10" width="292" height="230" />
+              <image href="https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/crypt_pulse_preds.png" x="-35" y="10" width="332" height="230" />
             </svg>
           </div>
         </article>
@@ -69,13 +69,10 @@ export default function CaseStudies() {
               </span>
               <span className="brand-name">Tourism RAG</span>
             </div>
-            <h3 className="case-card-title">Bringing the largest mountain on Earth to life</h3>
-            <p className="case-card-desc">Immersing visitors in the sounds of Base Camp as they are transported to Nepal</p>
+            <h3 className="case-card-title">Plan your next trip to Kenya on a budget</h3>
+            <p className="case-card-desc">Helping tourists and locals find the best accomodations, plan a safari, and immerse themselves into the culture.</p>
             <svg className="art" viewBox="0 0 260 260">
-              <g stroke="white" stroke-width="1" fill="none" opacity="0.5">
-                <rect x="55" y="70" width="150" height="190" rx="2"/>
-                <rect x="90" y="105" width="80" height="120" rx="2"/>
-              </g>
+              <image href="https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/screen_travel.png" x="-35" y="10" width="332" height="230" />
             </svg>
           </div>
         </article>
@@ -90,11 +87,10 @@ export default function CaseStudies() {
               </span>
               <span className="brand-name">Command History Tracker</span>
             </div>
-            <h3 className="case-card-title">A fully Immersive, world-className cocktail experience</h3>
-            <p className="case-card-desc">Immersed in the realistic sounds of a ship as it voyages across the sea</p>
+            <h3 className="case-card-title">A database for your CLI  sessions</h3>
+            <p className="case-card-desc">Organized CLI session history for developers to browse commands faster </p>
             <svg className="art" viewBox="0 0 260 260">
-              <text x="130" y="230" text-anchor="middle" font-size="76" font-weight="800" letter-spacing="2"
-                fill="none" stroke="white" stroke-width="1" opacity="0.5" transform="rotate(-4 130 200)">CMD</text>
+              <image href="https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/tui.png" x="-35" y="10" width="332" height="230" />
             </svg>
           </div>
         </article>
@@ -109,13 +105,10 @@ export default function CaseStudies() {
               </span>
               <span className="brand-name">Ecommerce Spark</span>
             </div>
-            <h3 className="case-card-title">Transforming luxury retail atmospheres</h3>
-            <p className="case-card-desc">Positioning premium products with soundscapes that enhance perceived value</p>
+            <h3 className="case-card-title">Scalable ecommerce data processing</h3>
+            <p className="case-card-desc">Helps ecommerce businesses to turn messy data into useable business intelligence</p>
             <svg className="art" viewBox="0 0 260 260">
-              <g stroke="white" stroke-width="1" fill="none" opacity="0.5">
-                <rect x="60" y="60" width="110" height="110" rx="6"/>
-                <rect x="95" y="95" width="110" height="110" rx="6"/>
-              </g>
+              <image href="https://media.istockphoto.com/id/1463455851/photo/cryptocurrency-market-financial-data-and-candlesticks-internet-banking.jpg?s=1024x1024&w=is&k=20&c=iTK_kYVDlAibVlQ7L-CgR0NVezeg5mhS0Jk8lVyLHdc=" x="-20" y="10" width="292" height="230" />
             </svg>
           </div>
         </article>
