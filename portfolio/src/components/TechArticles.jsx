@@ -83,7 +83,7 @@ export function Articles() {
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl font-bold text-white mb-5 text-center"
+              className="text-2xl font-bold text-white mb-5 text-center font-family-geist-pixel"
             >
              My technical articles
             </motion.h1>

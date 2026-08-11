@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Compass, ChevronLeft, ChevronRight, X, ExternalLink } from "lucide-react";
 import tui from "../assets/tui.png"
+import cmdShotImg from '../assets/CMDshot.png'
 const SLIDES = [
     {
     badge: "Command tracker",
@@ -11,6 +12,7 @@ const SLIDES = [
       "Contains a storage engine to persist history in organized directories",
       "An interactive CLI tool for browsing and executing commands",
     ],
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/tui.png"
   },
   {
     badge: "Command Tracker",
@@ -21,6 +23,7 @@ const SLIDES = [
       "Interactively browse commands history",
       "Tab Completion for the specified shell",
     ],
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/CMDshot.png"
   },
   
   {
@@ -32,6 +35,7 @@ const SLIDES = [
       "Reduce command re-entry time",
       "Create a more consistent development experience",
     ],
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/sqlitedb.png"
   },
   {
     badge: "Command Tracker",
@@ -42,12 +46,13 @@ const SLIDES = [
       "Golang (modules for dependency management)",
       "Bubble Tea (interactive terminal ui)",
     ],
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/cmd_tracker_arch.png"
   },
 ];
 
 
 function svgToDataUri(svg) {
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 }
 
 function statTile(x, y, w, h, color, label) {
@@ -124,9 +129,15 @@ const svgAlerts = `
 
 // Slide 4: dashboard templates (matches product screenshot)
 const svgTemplates = `
-<svg viewBox="0 0 520 640" xmlns="http://www.w3.org/2000/svg">
-  <image href="../assets/xprofile.png" x="188" y="60" width="292" height="230" />
-</svg>`;
+<svg viewBox="0 0 520 640" className="art">
+      <image 
+        href='https://images.pexels.com/photos/29445973/pexels-photo-29445973.jpeg'
+        x="114" 
+        y="60" 
+        width="292" 
+        height="230" 
+      />
+    </svg>`;
 
 const SLIDE_IMAGES = [svgMetrics, svgCorrelate, svgAlerts, svgTemplates].map(svgToDataUri);
 
@@ -180,11 +191,12 @@ export function OnboardingModal({ open, onClose }) {
           <div className="ob-preview__imagewrap">
             <img
               key={index}
-              src={SLIDE_IMAGES[index]}
+              src={`${slide.source}`}
               alt={`${slide.title} preview`}
               className="ob-preview__image"
               draggable={false}
             />
+       
           </div>
         </div>
 
@@ -353,6 +365,7 @@ const CSS = `
 .ob-preview__imagewrap {
   position: relative;
   border-radius: 6px;
+  background-size: cover;
   overflow: hidden;
   border: 1px solid #2c3235;
   background: #0e1013;
@@ -363,7 +376,7 @@ const CSS = `
   width: 100%;
   height: auto;
   aspect-ratio: 520 / 640;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   animation: ob-img-fade 0.28s ease-out;
 }

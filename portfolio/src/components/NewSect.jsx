@@ -11,8 +11,8 @@ export function NewSect(){
       <path d="M 600 345 C 820 345, 820 165, 1035 165" class="conn"/>
     </svg>
  
-    <div className="node about-header" style={{ left: '400px', top: '195px' }}>
-      <h1>ABOUT ME</h1>
+    <div className="node about-header" style={{ left: '400px', top: '195px', fontFamily: 'Geist Pixel', fontSize: '4em' }}>
+      <h1 style={{fontFamily: 'Geist Pixel'}}>ABOUT ME</h1>
     </div>
  
     <div className="node about-card card-title" style={{ left: '410px', top: '270px' }}>

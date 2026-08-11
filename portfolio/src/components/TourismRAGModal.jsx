@@ -175,7 +175,7 @@ export function OnboardingModal({ open, onClose }) {
           <div className="ob-preview__glow" />
           <h3 className="ob-preview__heading">Turn raw e-commerce data into smarter decisions</h3>
           <p className="ob-preview__copy">
-            Powering e-commerce analytics with scalable Spark pipeline.
+            Powering e-commerce analytics with a scalable Spark pipeline.
           </p>
 
           <div className="ob-preview__imagewrap">
