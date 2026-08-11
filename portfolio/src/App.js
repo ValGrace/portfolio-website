@@ -8,12 +8,9 @@ function App() {
     <div className="min-h-screen bg-[#0a0a0a] text-white">
      
        <NavSection /> 
-       
-      
-      
+   
      <Routing />
-      
-      
+ 
     </div>
   );
 }
