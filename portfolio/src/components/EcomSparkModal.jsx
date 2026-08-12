@@ -22,6 +22,7 @@ const SLIDES = [
       "Detects malformed or problematic records during transformation",
       "Generates analytical outputs for reporting"
     ],
+    source: ""
   },
   
   {
@@ -32,6 +33,7 @@ const SLIDES = [
       "Turns messy data into usable business intelligence",
       "Scalable foundation for data processing using spark"
     ],
+    source: ""
   },
   {
     badge: "Ecommerce Spark",
@@ -42,6 +44,7 @@ const SLIDES = [
       "Python (programming)",
       "Pytests (unit testing)"
     ],
+    source: ""
   },
 ];
 
@@ -130,7 +133,7 @@ const svgTemplates = `
 
 const SLIDE_IMAGES = [svgMetrics, svgCorrelate, svgAlerts, svgTemplates].map(svgToDataUri);
 
-export function OnboardingModal({ open, onClose }) {
+export function ESparkModal({ open, onClose }) {
   const [index, setIndex] = useState(3);
   const slide = SLIDES[index];
 
@@ -180,7 +183,7 @@ export function OnboardingModal({ open, onClose }) {
           <div className="ob-preview__imagewrap">
             <img
               key={index}
-              src={SLIDE_IMAGES[index]}
+              src='https://images.pexels.com/photos/29445973/pexels-photo-29445973.jpeg'
               alt={`${slide.title} preview`}
               className="ob-preview__image"
               draggable={false}
@@ -266,7 +269,7 @@ export default function OnboardingModalDemo() {
       <button className="ob-trigger" onClick={() => setOpen(true)}>
         Open dashboard tips
       </button>
-      <OnboardingModal open={open} onClose={() => setOpen(false)} />
+      <ESparkModal open={open} onClose={() => setOpen(false)} />
     </div>
   );
 }

@@ -80,7 +80,7 @@ export function TopSection() {
           >
             <button
               onClick={() => {
-                const element = document.getElementById("projects");
+                const element = document.getElementById("projects_new");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
               className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-lg transition-colors"

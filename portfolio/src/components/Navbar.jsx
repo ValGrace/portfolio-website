@@ -23,8 +23,8 @@ export default function NavSection() {
   };
 
   const menuItems = [
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
+    { id: "about_new", label: "About" },
+    { id: "projects_new", label: "Projects" },
     { id: "articles", label: "Articles" },
     // { id: "contact", label: "CONTACT" },
   ];

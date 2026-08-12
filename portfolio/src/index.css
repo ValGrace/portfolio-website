@@ -417,6 +417,327 @@
     color: currentColor;
   }
 
+  .ob-demo {
+  font-family: "Proxima Nova", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+.ob-trigger {
+  background: #474973;
+  color: #0b0c0e;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ob-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0d0c1da9;
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: ob-fade 0.15s ease-out;
+}
+@keyframes ob-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ob-modal {
+  background:  #0D0C1D;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 92vh;
+  display: flex;
+  box-shadow: 0 20px 60px #a69cac13;
+  border: 1px solid #22252a;
+  animation: ob-pop 0.18s ease-out;
+}
+@keyframes ob-pop {
+  from { opacity: 0; transform: scale(0.97) translateY(4px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* LEFT PREVIEW PANEL */
+.ob-preview {
+  flex: 1 1 55%;
+  background: linear-gradient(160deg, #0D0C1D 0%, #0b0c0e 45%);
+  padding: 28px 24px;
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+.ob-preview__glow {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #474973, #A69CAC);
+}
+.ob-preview__heading {
+  color: #e6e6e6;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 6px;
+}
+.ob-preview__copy {
+  color: #9fa7ae;
+  font-size: 12.5px;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+.ob-preview__imagewrap {
+  position: relative;
+  border-radius: 6px;
+  background-size: cover;
+  overflow: hidden;
+  border: 1px solid #2c3235;
+  background: #0e1013;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+.ob-preview__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 520 / 640;
+  object-fit: contain;
+  object-position: top;
+  animation: ob-img-fade 0.28s ease-out;
+}
+@keyframes ob-img-fade {
+  from { opacity: 0; transform: scale(1.01); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* RIGHT COPY PANEL */
+.ob-panel {
+  flex: 1 1 45%;
+  padding: 24px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-y: auto;
+}
+.ob-panel__closerow {
+  display: flex;
+  justify-content: flex-end;
+}
+.ob-closebtn {
+  background: none;
+  border: none;
+  color: #8e9297;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 0;
+}
+.ob-closebtn:hover { color: #e6e6e6; }
+
+.ob-badge {
+  align-self: flex-start;
+  background: #161b3387;
+  color: #F1DAC4;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+.ob-title {
+  color: #f4f5f5;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+.ob-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: #a69cac47;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+.ob-body {
+  color: #d0d3d6;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+.ob-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+.ob-bullets li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #c7cad0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.ob-bullets__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F1DAC4;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.ob-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.ob-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ob-navbtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #3d434a;
+  background: transparent;
+  color: #c7cad0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ob-navbtn:disabled {
+  color: #4a4f55;
+  cursor: default;
+}
+.ob-dots {
+  display: flex;
+  gap: 6px;
+}
+.ob-dots__item {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3d434a;
+}
+.ob-dots__item.is-active {
+  background: #F1DAC4;
+}
+.ob-count {
+  color: #8e9297;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.ob-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #3d434a;
+  color: #e6e6e6;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ob-cta:hover {
+  border-color: #A69CAC;
+  color: #A69CAC;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .ob-modal {
+    max-width: 640px;
+  }
+  .ob-title { font-size: 22px; }
+}
+
+@media (max-width: 720px) {
+  .ob-modal {
+    flex-direction: column;
+    max-height: 94vh;
+    overflow-y: auto;
+  }
+  .ob-preview {
+    flex: 0 0 auto;
+    padding: 20px 20px 24px;
+    max-height: 40vh;
+  }
+  .ob-preview__imagewrap {
+    max-height: 32vh;
+  }
+  .ob-preview__image {
+    height: 100%;
+    max-height: 32vh;
+  }
+  .ob-panel {
+    padding: 18px 20px 22px;
+    overflow-y: visible;
+  }
+  .ob-panel__closerow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .ob-preview {
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .ob-overlay { padding: 0; align-items: flex-end; }
+  .ob-modal {
+    max-width: 100%;
+    max-height: 96vh;
+    border-radius: 12px 12px 0 0;
+  }
+  .ob-preview {
+    padding: 18px 16px 20px;
+    max-height: 34vh;
+  }
+  .ob-preview__imagewrap,
+  .ob-preview__image {
+    max-height: 26vh;
+  }
+  .ob-title {
+    font-size: 20px;
+  }
+  .ob-panel {
+    padding: 16px 18px 20px;
+  }
+  .ob-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ob-cta {
+    justify-content: center;
+  }
+  .ob-nav {
+    justify-content: space-between;
+  }
+}
+
   @supports (color: color-mix(in lab, red, red)) {
     ::placeholder {
       color: color-mix(in oklab, currentColor 50%, transparent);

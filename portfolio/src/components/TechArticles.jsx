@@ -135,11 +135,11 @@ export function Articles() {
 
                     {/* Content */}
                     <div className="p-4">
-                      <h3 className="text-base font-semibold text-white mb-2 leading-tight group-hover:text-[#9EC5AB] transition-colors">
+                      <h3 className="text-lg font-semibold text-white mb-2 leading-tight group-hover:text-[#9EC5AB] transition-colors">
                         {article.title}
                       </h3>
 
-                      <p className="text-gray-400 text-sm mb-3 leading-relaxed line-clamp-2">
+                      <p className="text-gray-400 text-base mb-3 leading-relaxed line-clamp-2">
                         {article.description}
                       </p>
 
@@ -189,12 +189,12 @@ export function Articles() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-sm font-semibold text-white mb-2 leading-tight group-hover:text-[#9EC5AB] transition-colors">
+                    <h3 className="text-lg font-semibold text-white mb-2 leading-tight group-hover:text-[#9EC5AB] transition-colors">
                       {article.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">
+                    <p className="text-gray-400 text-base mb-3 leading-relaxed line-clamp-2">
                       {article.description}
                     </p>
 

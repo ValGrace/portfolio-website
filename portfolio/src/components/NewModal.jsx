@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Compass, ChevronLeft, ChevronRight, X, ExternalLink } from "lucide-react";
-import tui from "../assets/tui.png"
-import cmdShotImg from '../assets/CMDshot.png'
+
 const SLIDES = [
     {
     badge: "Command tracker",
@@ -142,7 +141,7 @@ const svgTemplates = `
 const SLIDE_IMAGES = [svgMetrics, svgCorrelate, svgAlerts, svgTemplates].map(svgToDataUri);
 
 export function OnboardingModal({ open, onClose }) {
-  const [index, setIndex] = useState(3);
+  const [index, setIndex] = useState(0);
   const slide = SLIDES[index];
 
   const handleKey = useCallback(
@@ -270,13 +269,13 @@ export function OnboardingModal({ open, onClose }) {
 }
 
 export default function OnboardingModalDemo() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="ob-demo">
       <style>{CSS}</style>
       <button className="ob-trigger" onClick={() => setOpen(true)}>
-        Open dashboard tips
+        View project
       </button>
       <OnboardingModal open={open} onClose={() => setOpen(false)} />
     </div>

@@ -12,7 +12,7 @@ export function NewSect(){
     </svg>
  
     <div className="node about-header" style={{ left: '400px', top: '195px', fontFamily: 'Geist Pixel', fontSize: '4em' }}>
-      <h1 style={{fontFamily: 'Geist Pixel'}}>ABOUT ME</h1>
+      <h1 style={{fontFamily: 'Geist Pixel'}} id="about_new">ABOUT ME</h1>
     </div>
  
     <div className="node about-card card-title" style={{ left: '410px', top: '270px' }}>
