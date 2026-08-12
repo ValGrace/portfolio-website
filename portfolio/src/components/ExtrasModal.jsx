@@ -37,7 +37,7 @@ const SLIDES = [
       "Fast api endpoints",
     ],
     loc: "https://interdoc-sigma.vercel.app/",
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/interdoc-sigma.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/interdoc-sigma.jpeg"
   },
   {
     badge: "Ecommerce website",

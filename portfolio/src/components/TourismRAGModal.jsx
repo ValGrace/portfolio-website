@@ -10,7 +10,7 @@ const SLIDES = [
       "Plan your trip to Kenya and East Africa",
       "Find the best activities to do while on your trip",
     ],
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/voyager-travel.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/voyager-travel.jpeg"
   },
   {
     badge: "Voyager",
