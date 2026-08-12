@@ -258,7 +258,8 @@ export function LiqModal({ open, onClose }) {
               </span>
             </div>
 
-            <a className="ob-cta" href="https://github.com/ValGrace/terminal-ui">
+            <a className="ob-cta" href="https://github.com/ValGrace/exchange_liquidation" target="_blank" 
+  rel="noopener noreferrer">
               <ExternalLink size={14} />
 
               Show me

@@ -248,7 +248,8 @@ export function ESparkModal({ open, onClose }) {
               </span>
             </div>
 
-            <a className="ob-cta" href="https://github.com/ValGrace/ecommerce_spark_pipeline">
+            <a className="ob-cta" href="https://github.com/ValGrace/ecommerce_spark_pipeline" target="_blank" 
+  rel="noopener noreferrer">
               <ExternalLink size={14} />
 
               Show me

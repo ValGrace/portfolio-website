@@ -15,9 +15,9 @@ const SLIDES = [
     source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/bi_dashboard.png"
   },
   {
-    badge: "Telco customer churn prediction",
+    badge: "Telco Customer Churn Prediction",
     title: "Machine learning model",
-    body: "Using machine learning to predict if a telecommunications customer is likely to churn based on demographic information, subscribed events, billing information and contract details",
+    body: "Using machine learning to predict if a telecommunications customer is likely to churn based on",
     bullets: [
       "Demographic information",
       "Subscribed events",
@@ -49,7 +49,7 @@ const SLIDES = [
       "MPESA API integration",
     ],
     loc: "https://anypay-28455.web.app/",
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/cmd_tracker_arch.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/anpay.png"
   },
   {
     badge: "RDBMS",
@@ -57,11 +57,11 @@ const SLIDES = [
     body: "Relational Database Management System REPL shell",
     bullets: [
       "Interactive shell and embedded db",
-      "Supports both DDL (Data Definition) and DML (Data Manipulation)",
+      "Supports both DDL (Data Definition) and DQL (Data Query) Operations",
       "Supports indexing, foreign keys and joins",
     ],
     loc: "https://github.com/ValGrace/RDBMS",
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/cmd_tracker_arch.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/rdbms.png"
   },
   {
     badge: "47 Docs",
@@ -73,7 +73,7 @@ const SLIDES = [
       "Support for multiple languages",
     ],
     loc: "https://github.com/ValGrace/47Docs",
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/47Docs.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/47DOCS.png"
   },
   
 ];
@@ -120,9 +120,9 @@ export function ExtrasModal({ open, onClose }) {
         {/* LEFT: dashboard preview gallery */}
         <div className="ob-preview">
           <div className="ob-preview__glow" />
-          <h3 className="ob-preview__heading">Save all your CLI sessions in a structured way</h3>
+          <h3 className="ob-preview__heading">View other projects i have worked on.</h3>
           <p className="ob-preview__copy">
-            Get started with CLI tracker. Monitor the commands you use and find them easily.
+            Data analysis, sql, frontend, backend, machine learning, RAG.
           </p>
 
           <div className="ob-preview__imagewrap">
@@ -165,6 +165,10 @@ export function ExtrasModal({ open, onClose }) {
               </li>
             ))}
           </ul>
+          <button className="ob-trigger">
+            <a href={`${slide.loc}`} target="_blank" 
+  rel="noopener noreferrer" >View Project</a> 
+          </button>
 
           <div className="ob-footer">
             <div className="ob-nav">
@@ -194,10 +198,11 @@ export function ExtrasModal({ open, onClose }) {
               </span>
             </div>
 
-            <a className="ob-cta" href="https://github.com/ValGrace">
+            <a className="ob-cta" href="https://github.com/ValGrace" target="_blank" 
+  rel="noopener noreferrer">
               <ExternalLink size={14} />
 
-              Show me
+              My Github
             </a>
           </div>
         </div>

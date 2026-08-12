@@ -250,7 +250,8 @@ export function TourismModal({ open, onClose }) {
               </span>
             </div>
 
-            <a className="ob-cta" href="https://github.com/ValGrace/ecommerce_spark_pipeline">
+            <a className="ob-cta" href="https://github.com/ValGrace/travel_assistant" target="_blank" 
+  rel="noopener noreferrer">
               <ExternalLink size={14} />
 
               Show me
