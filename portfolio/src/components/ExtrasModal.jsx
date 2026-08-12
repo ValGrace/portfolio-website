@@ -37,7 +37,7 @@ const SLIDES = [
       "Fast api endpoints",
     ],
     loc: "https://interdoc-sigma.vercel.app/",
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/interdoc.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/interdoc-sigma.png"
   },
   {
     badge: "Ecommerce website",
@@ -49,7 +49,7 @@ const SLIDES = [
       "MPESA API integration",
     ],
     loc: "https://anypay-28455.web.app/",
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/anpay.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/anypay-ecom.jpeg"
   },
   {
     badge: "RDBMS",

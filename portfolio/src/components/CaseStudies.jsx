@@ -1,7 +1,5 @@
-import { motion } from "motion/react";
-import { useInView } from "../hooks/useInView";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
-import React, {useRef, useState} from "react"
+// import { useInView } from "../hooks/useInView";
+import React, {useState} from "react"
 import {OnboardingModal} from "./NewModal";
 import {LiqModal} from "./ExchLiqModal";
 import { TourismModal } from "./TourismRAGModal";
@@ -10,11 +8,8 @@ import { ExtrasModal} from "./ExtrasModal"
 
 
 export default function CaseStudies() {
-  const [ref, isInView] = useInView({ threshold: 0.1 });
-  const track = document.getElementById('track');
-  // const prevBtn = document.getElementById('prevBtn');
-  // const nextBtn = document.getElementById('nextBtn');
-   const trackRef = useRef(null);
+  // const [ref, isInView] = useInView({ threshold: 0.1 });
+
   const step = 322; // card width + gap
   const [open, setOpen] = useState(false)
   const [openLiq, setOpenLiq] = useState(false)

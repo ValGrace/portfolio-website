@@ -1,11 +1,8 @@
-
 import TopSection from './TopSection'
-import Projects from './Projects'
 import Contact from './Contact'
 import {Articles} from './TechArticles'
 import { NewSect } from './NewSect'
 import CaseStudies from './CaseStudies'
-import OnboardingModalDemo from './NewModal'
 
 const HomePage = () => {
     return (
