@@ -1,5 +1,5 @@
 // import { useInView } from "../hooks/useInView";
-import React, {useState} from "react"
+import React, {useState, useRef} from "react"
 import {OnboardingModal} from "./NewModal";
 import {LiqModal} from "./ExchLiqModal";
 import { TourismModal } from "./TourismRAGModal";
@@ -11,6 +11,7 @@ export default function CaseStudies() {
   // const [ref, isInView] = useInView({ threshold: 0.1 });
 
   const step = 322; // card width + gap
+ 
   const [open, setOpen] = useState(false)
   const [openLiq, setOpenLiq] = useState(false)
   const [openTours, setOpenTours] = useState(false)
@@ -23,6 +24,15 @@ export default function CaseStudies() {
   // prevBtn.addEventListener('onClick', () => {
   //   track.scrollBy({ left: -step, behavior: 'smooth' });
   // });
+  const trackRef = useRef(null)
+  const ScrollTrack = (direction) => {
+    if (trackRef.current) {
+      trackRef.current.scrollBy({
+        left: direction === 'left' ? -step : step,
+        behavior: 'smooth',
+      })
+    }
+  }
 
   return (
     <div className="case-wrap" id="projects_new">
@@ -35,18 +45,18 @@ export default function CaseStudies() {
         <h1>Projects</h1>
         <p className="sub">See how I use technology to solve problems.</p>
       </div>
-      <div classNameName="nav">
-        <button className="nav-btn" id="prevBtn" aria-label="Previous" onClick={() => window.scrollBy({ left: -step, behavior: 'smooth' })}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <div className="nav">
+        <button className="nav-btn" id="prevBtn" aria-label="Previous" onClick={() => ScrollTrack('left')}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
         </button>
-        <button className="nav-btn" id="nextBtn" aria-label="Next" onClick={() => window.scrollBy({ left: step, behavior: 'smooth' })}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <button className="nav-btn" id="nextBtn" aria-label="Next" onClick={() => ScrollTrack('right')}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
       </div>
     </div>
 
     <div className="track-wrap">
-      <div className="track" id="track">
+      <div className="track" id="track" ref={trackRef}>
         <article className="case-card" onClick={() => setOpenLiq(true)}>
           <svg className="border-svg" viewBox="0 0 300 400"><rect className="border-rect" x="1" y="1" width="298" height="398" rx="20" ry="20"/></svg>
           <div className="case-card-inner">
