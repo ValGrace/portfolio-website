@@ -37,7 +37,7 @@ const readHistoryArticles = [
     date: "June 23, 2026",
     readTime: "5 min read",
     category: "Kubernetes",
-    categoryColor: "from-blue-500 to-blue-600",
+    categoryColor: "from-pink-500 to-pink-600",
     link: "https://medium.com/@gracevalerie1/working-with-containers-and-kubernetes-b33b92d08f7b",
   },
   {
@@ -56,7 +56,7 @@ const readHistoryArticles = [
       "A detailed explanation of the differences between OLTP and OLAP systems, their use cases, and how they are designed to handle different types of workloads.",
     date: "May 08, 2026",
     readTime: "3 min read",
-    category: "Security",
+    category: "Databases",
     categoryColor: "from-red-500 to-red-600",
     link: "https://medium.com/@gracevalerie1/the-core-differences-between-oltp-and-olap-systems-56488199d279",
   },
