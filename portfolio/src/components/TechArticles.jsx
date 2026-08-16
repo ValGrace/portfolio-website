@@ -12,7 +12,7 @@ const trendingArticles = [
     category: "Cloudflare",
     categoryColor: "from-pink-500 to-pink-600",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "#",
+    link: "https://medium.com/@gracevalerie1/how-cloudflare-broke-the-internet-496035a4f29e",
     trending: true,
   },
   {
@@ -31,14 +31,14 @@ const trendingArticles = [
 
 const readHistoryArticles = [
   {
-    title: "How to Install Golang Mockery on Windows?",
+    title: "Working with containers and Kubernetes",
     description:
-      "This article is a lightweight guide on how to download golang mockery which is a package used to perform unit tests",
-    date: "February 28, 2025",
-    readTime: "3 min read",
-    category: "Golang",
-    categoryColor: "from-pink-500 to-pink-600",
-    link: "https://www.geeksforgeeks.org/installation-guide/how-to-install-golang-mockery-on-windows/",
+      "Learn about container orchestration, docker, kubernetes, and the components that make up a kubernetes cluster.",
+    date: "June 23, 2026",
+    readTime: "5 min read",
+    category: "Kubernetes",
+    categoryColor: "from-blue-500 to-blue-600",
+    link: "https://medium.com/@gracevalerie1/working-with-containers-and-kubernetes-b33b92d08f7b",
   },
   {
     title: "Build an ETL pipeline with Kafka and Cassandra",
@@ -51,14 +51,14 @@ const readHistoryArticles = [
     link: "https://medium.com/@gracevalerie1/build-an-etl-pipeline-with-kafka-and-cassandra-7b374824bc27",
   },
   {
-    title: "ProxyChaining",
+    title: "The Core differences between OLTP and OLAP systems",
     description:
-      "In a world where digital privacy is a myth, achieving total anonymity has been a top concern for many organizations and individuals. One technique that enables this is using proxychains.",
-    date: "18/05/2025",
-    readTime: "4 min read",
+      "A detailed explanation of the differences between OLTP and OLAP systems, their use cases, and how they are designed to handle different types of workloads.",
+    date: "May 08, 2026",
+    readTime: "3 min read",
     category: "Security",
     categoryColor: "from-red-500 to-red-600",
-    link: "https://dev.to/valgrace/proxychaining-1c86",
+    link: "https://medium.com/@gracevalerie1/the-core-differences-between-oltp-and-olap-systems-56488199d279",
   },
   {
     title: "How to import local and cloud PostgreSQL databases to Power BI",
@@ -105,7 +105,7 @@ export function Articles() {
                 >
                   <a
                     href={article.link}
-                    className="block relative rounded-lg overflow-hidden border border-emerald-500/20 bg-gradient-to-b from-emerald-500/5 to-transparent hover:border-gray-700/50 transition-all duration-300"
+                    className="block relative rounded-lg overflow-hidden border border-emerald-500/20 bg-gradient-to-b from-emerald-500/5 to-transparent hover:border-gray-700/50 transition-all duration-300" target="_blank"
                   >
                     {/* Image with overlay */}
                     <div className="relative h-44 overflow-hidden">
