@@ -69,7 +69,7 @@ export default function CaseStudies() {
             <h3 className="case-card-title">Cryptocurrency market aggregation for traders</h3>
             <p className="case-card-desc">For traders and analysts to spot risk, and possible arbitrage opportunities before the market moves too far</p>
             <svg className="art" viewBox="0 0 260 260">
-              <image href="https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/crypt_pulse_preds.png" x="-35" y="10" width="332" height="230" />
+              <image href="https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/pulse_two.jpeg" x="-35" y="10" width="332" height="230" />
             </svg>
             
           </div>

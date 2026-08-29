@@ -24,7 +24,7 @@ const SLIDES = [
       "Partitioned storage for efficient querying",
       "API endpoints for retrieving trades, filtering data, viewing summaries"
     ],
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/crypt_pulse_preds.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/pulse_two.jpeg"
   },
   
   {
@@ -36,7 +36,7 @@ const SLIDES = [
       "Supports analytics, monitoring and downstream fdporting",
       "Helps traders, analysts or developers observe market conditions in real time",
     ],
-    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/live_trades.png"
+    source: "https://raw.githubusercontent.com/ValGrace/portfolio-website/Main/portfolio/src/assets/pulse.png"
   },
   {
     badge: "Exchange Liquidation",
